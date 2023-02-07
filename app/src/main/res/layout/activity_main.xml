@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/title"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/navbar_bottom"
+        android:background="@color/white"/>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:adjustViewBounds="true"
+               android:scaleType="fitXY"
+               android:src="@drawable/background"/>
+
+       </FrameLayout>
+
+       <TextView
+           style="@style/TextContent.Title"
+           android:text="@string/babi_goreng" />
+       <TextView
+           style="@style/TextContent.Desc"
+           android:text="@string/desc"/>
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/activity_horizonal_margin"
+           android:layout_marginRight="@dimen/activity_horizonal_margin"
+           android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               android:src="@drawable/raraa"
+               android:layout_centerVertical="true"
+               android:layout_marginEnd="@dimen/activity_vertical_margin"
+               android:id="@+id/profile"
+               android:layout_marginRight="@dimen/activity_horizonal_margin"
+               android:layout_marginTop="10dp"/>
+
+           <TextView
+               style="@style/TextContent"
+               android:layout_toEndOf="@+id/profile"
+               android:layout_toRightOf="@+id/profile"
+               android:text="@string/name"
+               android:textColor="@color/black"
+               android:textSize="15sp"
+               android:id="@+id/rara"
+               android:layout_marginTop="15dp"/>
+
+           <TextView
+               android:id="@+id/kha"
+               style="@style/TextContent"
+               android:layout_marginLeft="15dp"
+               android:layout_marginBottom="-20dp"
+               android:layout_toRightOf="@+id/profile"
+               android:textSize="15sp"
+               android:textColor="@color/black"
+               android:text="@string/namee"
+               android:layout_alignBottom="@+id/rara"/>
+
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/title"
+               android:visibility="visible"
+               android:layout_marginTop="75dp"/>
+
+       </RelativeLayout>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/babiantialot"
+           android:textColor="@color/black"
+           android:layout_marginLeft="@dimen/activity_horizonal_margin"
+           android:layout_marginTop="-5dp"/>
+
+       <ImageView
+           style="@style/TextContent"
+           android:src="@drawable/frame"
+           android:adjustViewBounds="true"
+           android:layout_marginTop="10dp"/>
+
+      <TextView
+          style="@style/TextContent.bhnlngkh"
+          android:text="Bahan- Bahan"
+          android:textSize="20sp"
+          android:layout_marginTop="5dp"/>
+
+       <TextView
+           style="@style/TextContent"
+           android:text="2 orang"
+           android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+           android:textColor="@color/desc"
+           android:textSize="12sp"
+           android:layout_marginTop="3dp"/>
+
+    <TextView
+        style="@style/TextContent.bahan"
+        android:text="@string/bahan1"/>
+
+       <TextView
+          style="@style/TextContent.bahan"
+           android:text="@string/bahan2"/>
+
+       <TextView
+           style="@style/TextContent.bahan"
+           android:text="@string/bahan3"/>
+
+       <TextView
+          style="@style/TextContent.bahan"
+           android:text="@string/bahan4"/>
+
+       <TextView
+           style="@style/TextContent.bahan"
+           android:text="@string/bumbu"
+           android:layout_marginTop="5dp"/>
+
+       <TextView
+           style="@style/TextContent.bahan"
+           android:text="@string/buumbu1"/>
+
+       <TextView
+           style="@style/TextContent.bahan"
+           android:text="@string/bumbu2"/>
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_marginLeft="@dimen/activity_horizonal_margin"
+           android:layout_marginRight="@dimen/activity_horizonal_margin"
+           android:layout_height="1dp"
+           android:background="@color/title"
+           android:visibility="visible"
+           android:layout_marginTop="10dp"/>
+       <TextView
+          style="@style/TextContent.bhnlngkh"
+           android:text="Langkah-langkah"
+           android:layout_marginTop="10dp"
+           android:textSize="20sp"/>
+
+       <TextView
+           style="@style/TextContent.langkah"
+           android:text="@string/langkah1"/>
+
+
+
+       <ImageView
+           style="@style/TextContent.image"
+           android:src="@drawable/lngkah1"
+           android:id="@+id/lngkah1"/>
+
+<!--       <ImageView-->
+<!--           style="@style/TextContent"-->
+<!--           android:layout_width="100dp"-->
+<!--           android:adjustViewBounds="true"-->
+<!--           android:src="@drawable/lngkah11"/>-->
+
+       <TextView
+          style="@style/TextContent.langkah"
+           android:text="@string/lngkah2"/>
+
+       <ImageView
+           style="@style/TextContent.image"
+           android:src="@drawable/lngkah2"/>
+
+       <TextView
+           style="@style/TextContent.langkah"
+           android:text="@string/lngkah3"/>
+
+       <ImageView
+           style="@style/TextContent.image"
+           android:src="@drawable/lngkh3"/>
+
+       <TextView
+          style="@style/TextContent.langkah"
+           android:text="@string/lngkah4"/>
+
+       <ImageView
+           style="@style/TextContent.image"
+           android:src="@drawable/lngkah4"/>
+
+       <TextView
+          style="@style/TextContent.langkah"
+           android:text="@string/lngkh5"/>
+
+       <ImageView
+           style="@style/TextContent.image"
+           android:src="@drawable/lngkh5"/>
+
+       <TextView
+           style="@style/TextContent.langkah"
+           android:text="@string/lngkh6"/>
+
+       <ImageView
+           style="@style/TextContent.image"
+           android:src="@drawable/lngkh6"
+           android:layout_marginBottom="55dp"/>
+
+   </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>
